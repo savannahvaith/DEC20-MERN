@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "clock": "^1.0.2",
-    "cowsay": "^1.4.0"
+    "cowsay": "^1.4.0",
+    "pokemon": "^2.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
