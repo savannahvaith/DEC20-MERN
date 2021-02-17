@@ -1,23 +1,18 @@
 const express = require('express');
+const cors = require('cors');
+const bodyParser = require('body-parser');
 
 // instantiate my app 
 const app = express(); 
+app.use(cors());
+app.use(bodyParser.json());
 
-// Requests
-app.get("/", (req, res) => {
-    res.send("hello world!");
-});
+// importing all of the routes in product.js
+const productRoute = require('./routes/products');
 
-app.get("/hello", (req, res) => {
-    res.status(200).send("This is the hello route");
-    // console.log(`heyyyy!`);
-});
-
-app.get("/error", (req,res)=>{
-    res.status(500).send("oops");
-});
+app.use("/product",productRoute);
 
 // communicate with the app on a specific port
 const server = app.listen(5019, () => {
     console.log(`Server has successfully started on port number: ${server.address().port}`);
-})
+});
