@@ -20,8 +20,8 @@
   * :heavy_check_mark: Response Object
     * `send()`
     * `status`
-  * Next Object
-* Middleware
+  * :heavy_check_mark: Next Object
+* :heavy_check_mark: Middleware
   * Understanding what it is and how to use it
   * Creating our own middleware
   * Common Middleware - `BodyParser`
