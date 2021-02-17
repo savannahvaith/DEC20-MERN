@@ -1,12 +1,16 @@
 'use strict';
 const router = require('express').Router();
+const {Product} = require("../config/db");
 
-let products=["deodrant","apples","cheese","pineapple"];
 
 // requests (C,R,U,D)
 router.get("/getAll", (req, res, next) => {
-    res.send(`Here's the information you asked for... ${products}`);
-    // next();
+    Product.find((err,products) => {
+        if(err){
+            console.error(err);
+        }
+        res.send(products);
+    });
 });
 
 // router.use((req,res,next) => {
