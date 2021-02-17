@@ -1,9 +1,11 @@
 'use strict';
 const router = require('express').Router();
 
+let products=["deodrant","apples","cheese","pineapple"];
+
 // requests (C,R,U,D)
 router.get("/getAll", (req, res, next) => {
-    res.send(`Here's the information you asked for...`);
+    res.send(`Here's the information you asked for... ${products}`);
     // next();
 });
 
@@ -14,12 +16,13 @@ router.get("/getAll", (req, res, next) => {
 
 router.post("/create", (req, res, next) => {
     const name = req.body.name;
-    res.send(`Hello there ${name}`);
+    products.push(name);
+    res.send(`Added ${name} to product list!\n Here's the new list: ${products}`);
 });
 
 // url parameters?
-router.delete("/delete/:id", (req, res, next) => {
-    console.log(req.params.id);
+router.delete("/delete/:name", (req, res, next) => {
+    console.log(req.params.name);
     res.send(`done`);
 });
 
@@ -31,9 +34,9 @@ router.patch("/update/:id", (req, res, next) => {
     // const age = req.query.age;
 
     // destructuring?
-    const { name, age } = req.query;
-    console.log(`name: ${name}, age: ${age}`);
-    res.send(`got your info, k thanks bye`);
+    const { name } = req.query;
+    products[id] = name;
+    res.send(`got your info, k thanks bye ${products}`);
 
 });
 
