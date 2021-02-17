@@ -6,14 +6,14 @@
   * :heavy_check_mark: Creating a server
   * :heavy_check_mark: Starting the application
   * (Then eventually show `npm express-generator --no-view`)
-* Understanding Chaining methods
-* Handling Requests
-  * :heavy_check_mark: GET
+* :heavy_check_mark: Understanding Chaining methods
+* :heavy_check_mark: Handling Requests
+  * GET
   * POST
   * PUT
   * PATCH
   * DELETE
-  * Request Object
+  * :heavy_check_mark: Request Object
     * URL Parameters
     * Request Body
     * Query Parameters
