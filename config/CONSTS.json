@@ -1,0 +1,4 @@
+{
+    "DB_URL": "localhost:27017",
+    "DB_NAME":"tesco"
+}
