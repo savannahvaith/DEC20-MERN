@@ -7,7 +7,7 @@ const { Product } = require("../config/db");
 router.get("/getAll", (req, res, next) => {
     Product.find((err, products) => {
         if (err) {
-            console.error(err);
+            next(err);
         }
         res.send(products);
     });
@@ -17,7 +17,7 @@ router.get("/getAll", (req, res, next) => {
 router.get("/get/:id", (req,res,next) => {
     Product.findById(req.params.id, (err,result) => {
         if(err){
-            console.error(err);
+            next(err);
         }
         res.status(200).send(result);
     })
@@ -30,14 +30,14 @@ router.post("/create", (req, res, next) => {
         .then((result) => {
             res.status(201).send(`${result.name} has been added successfully!`)
         })
-        .catch((err) => console.error(err));
+        .catch((err) => next(err));
 });
 
 // ? DELETE
 router.delete("/delete/:id", (req, res, next) => {
     Product.findByIdAndDelete(req.params.id, (err) => {
         if(err){
-            console.log(err);
+            next(err);
         }
         res.status(204).send(`Successfully deleted`);
     });
@@ -48,9 +48,9 @@ router.patch("/update/:id", (req, res, next) => {
    Product.findByIdAndUpdate(req.params.id, 
     req.body, 
     {new: true}, 
-    (err, result) => {
+    (err) => {
        if(err){
-           console.error(err);
+           next(err);
        }
        res.status(202).send(`Successfully updated!`);
    })
@@ -59,9 +59,9 @@ router.patch("/update/:id", (req, res, next) => {
 // ? REPLACE
 router.put("/replace/:id", (req,res,next) => {
     const {name, price, onSale} = req.query;
-    Product.findByIdAndUpdate(req.params.id, {name,price,onSale}, {new: true}, (err, result)=>{
+    Product.findByIdAndUpdate(req.params.id, {name,price,onSale}, {new: true}, (err)=>{
         if(err){
-            console.error(err);
+            next(err);
         }
         res.status(202).send(`Successfully replaced!`);
     });
