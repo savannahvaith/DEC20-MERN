@@ -1,4 +1,6 @@
-# DEC20-MERN
+# Express & Mongoose
+
+Topics:
 
 * :heavy_check_mark: What is Express?
 * :heavy_check_mark: Installing express
