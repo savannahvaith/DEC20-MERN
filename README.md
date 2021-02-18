@@ -34,6 +34,8 @@
 * :heavy_check_mark: Mongoose
   * Schemas
   * Validation
+    * Required
+    * Type
   * Models
   * Queries
   * CRUD
