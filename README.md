@@ -25,13 +25,13 @@
   * Understanding what it is and how to use it
   * Creating our own middleware
   * Common Middleware - `BodyParser`
-* Error Handling
+* :heavy_check_mark: Error Handling
   * `http-errors`
   * Error handling middleware
 * :heavy_check_mark: Router
   * How to import and export functions/variables
   * Understanding Base Paths
-* Mongoose
+* :heavy_check_mark: Mongoose
   * Schemas
   * Validation
   * Models
