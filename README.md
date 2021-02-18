@@ -7,7 +7,7 @@ Topics:
 * :heavy_check_mark: Creating an express application from scratch
   * :heavy_check_mark: Creating a server
   * :heavy_check_mark: Starting the application
-  * (Then eventually show `npm express-generator --no-view`)
+  * :heavy_check_mark: (Then eventually show `npm express-generator --no-view`)
 * :heavy_check_mark: Understanding Chaining methods
 * :heavy_check_mark: Handling Requests
   * GET
