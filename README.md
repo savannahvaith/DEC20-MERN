@@ -2,13 +2,13 @@
 
 MERN Plan with DEC Software 2020 
 
-## MongoDB
+## :heavy_check_mark: MongoDB 
 
 * :heavy_check_mark: Install [MongoDB Compass](https://www.mongodb.com/products/compass)
 * :heavy_check_mark: Walk through of what Mongo is
 * :heavy_check_mark: Explanation of Schema, Collection and Document
 
-## [Node](https://github.com/savannahvaith/DEC20-MERN/tree/Node)
+## :heavy_check_mark: [Node](https://github.com/savannahvaith/DEC20-MERN/tree/Node) 
 * :heavy_check_mark: Install [Node](https://nodejs.org/en/download/)
 * :heavy_check_mark: What is `npm`?
 * :heavy_check_mark: Creating a Node Project `npm init`
@@ -16,7 +16,7 @@ MERN Plan with DEC Software 2020
 * :heavy_check_mark: Managing and installing dependencies
 * :heavy_check_mark: Running Scripts
 
-## [Express](https://github.com/savannahvaith/DEC20-MERN/tree/Express)
+## :heavy_check_mark: [Express](https://github.com/savannahvaith/DEC20-MERN/tree/Express) 
 
 * :heavy_check_mark: What is Express?
 * :heavy_check_mark: Installing express
@@ -55,4 +55,33 @@ MERN Plan with DEC Software 2020
   * Models
   * Queries
   * CRUD
-* Testing with Mocha, Chai and Istanbul
+* :x: Testing with Mocha, Chai and Istanbul
+
+## :x: React
+
+* What is React?
+* Skeleton Code
+  * `npx create-react-app`
+* Introduction
+  * JSX
+  * Export and Import
+* Parent/Child Components
+* Component Hierarchy
+* Props
+* State
+  * Hooks (`useState()`)
+  * Adding and Updating
+* Forms and Events
+* Lifting State (Inverse Data Flow)
+* Working with external Data
+  * Hooks in more detail
+  * `useEffect()`
+* Router
+  * `npm install react-router-dom`
+* Data Requests
+  * Axios
+  * `useHistory()`
+* Testing
+  * JEST
+
+
