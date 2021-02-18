@@ -1,47 +1,70 @@
 'use strict';
 const router = require('express').Router();
-const {Product} = require("../config/db");
+const { Product } = require("../config/db");
 
 
-// requests (C,R,U,D)
+// ? GET ALL
 router.get("/getAll", (req, res, next) => {
-    Product.find((err,products) => {
-        if(err){
+    Product.find((err, products) => {
+        if (err) {
             console.error(err);
         }
         res.send(products);
     });
 });
 
-// router.use((req,res,next) => {
-//     console.log("hello");
-//     res.send("done");
-// })
+// ? GET ONE
+router.get("/get/:id", (req,res,next) => {
+    Product.findById(req.params.id, (err,result) => {
+        if(err){
+            console.error(err);
+        }
+        res.status(200).send(result);
+    })
+})
 
+// ? CREATE
 router.post("/create", (req, res, next) => {
-    const name = req.body.name;
-    products.push(name);
-    res.send(`Added ${name} to product list!\n Here's the new list: ${products}`);
+    const item = new Product(req.body);
+    item.save()
+        .then((result) => {
+            res.status(201).send(`${result.name} has been added successfully!`)
+        })
+        .catch((err) => console.error(err));
 });
 
-// url parameters?
-router.delete("/delete/:name", (req, res, next) => {
-    console.log(req.params.name);
-    res.send(`done`);
+// ? DELETE
+router.delete("/delete/:id", (req, res, next) => {
+    Product.findByIdAndDelete(req.params.id, (err) => {
+        if(err){
+            console.log(err);
+        }
+        res.status(204).send(`Successfully deleted`);
+    });
 });
 
-// query parameter
+// ? PARTIAL UPDATE
 router.patch("/update/:id", (req, res, next) => {
-    const id = req.params.id;
-    console.log(`id: ${id}`);
-    // const name = req.query.name; 
-    // const age = req.query.age;
+   Product.findByIdAndUpdate(req.params.id, 
+    req.body, 
+    {new: true}, 
+    (err, result) => {
+       if(err){
+           console.error(err);
+       }
+       res.status(202).send(`Successfully updated!`);
+   })
+});
 
-    // destructuring?
-    const { name } = req.query;
-    products[id] = name;
-    res.send(`got your info, k thanks bye ${products}`);
-
+// ? REPLACE
+router.put("/replace/:id", (req,res,next) => {
+    const {name, price, onSale} = req.query;
+    Product.findByIdAndUpdate(req.params.id, {name,price,onSale}, {new: true}, (err, result)=>{
+        if(err){
+            console.error(err);
+        }
+        res.status(202).send(`Successfully replaced!`);
+    });
 });
 
 
