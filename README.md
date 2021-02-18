@@ -16,7 +16,7 @@ MERN Plan with DEC Software 2020
 * Managing and installing dependencies
 * Running Scripts
 
-## :heavy_check_mark: [Express](https://github.com/savannahvaith/DEC20-MERN/tree/Express) 
+## :exclamation: [Express](https://github.com/savannahvaith/DEC20-MERN/tree/Express) 
 
 * What is Express?
 * Installing express
