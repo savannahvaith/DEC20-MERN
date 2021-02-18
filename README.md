@@ -28,7 +28,7 @@
 * Error Handling
   * `http-errors`
   * Error handling middleware
-* Router
+* :heavy_check_mark: Router
   * How to import and export functions/variables
   * Understanding Base Paths
 * Mongoose
