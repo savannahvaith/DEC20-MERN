@@ -1,4 +1,4 @@
-# Express & Mongoose
+# Express
 
 Topics:
 
