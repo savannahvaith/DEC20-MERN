@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const createError = require('http-errors');
+const {PRODUCT_URL} = require('./config/CONSTS.json');
 
 // instantiate my app 
 const app = express(); 
@@ -22,7 +23,11 @@ app.use(logger);
 // importing all of the routes in product.js
 const productRoute = require('./routes/products');
 
-app.use("/product",productRoute);
+app.use(`${PRODUCT_URL}`,productRoute);
+
+app.use("/hello", (req,res,next) => {
+    res.send("hi");
+})
 
 // error handling
 app.use((req,res,next) => {
@@ -37,3 +42,5 @@ app.use((err,req,res,next)=>{
 const server = app.listen(5019, () => {
     console.log(`Server has successfully started on port number: ${server.address().port}`);
 });
+
+module.exports = server; 

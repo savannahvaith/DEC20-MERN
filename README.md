@@ -41,4 +41,5 @@ Topics:
   * Models
   * Queries
   * CRUD
-* Testing with Mocha, Chai and Istanbul
+* :heavy_check_mark: Testing with Mocha, Chai and NYC
+  * For coverage output: `npm run coverage`
