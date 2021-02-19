@@ -16,14 +16,14 @@ MERN Plan with DEC Software 2020
 * Managing and installing dependencies
 * Running Scripts
 
-## :exclamation: [Express](https://github.com/savannahvaith/DEC20-MERN/tree/Express) 
+## :heavy_check_mark: [Express](https://github.com/savannahvaith/DEC20-MERN/tree/Express) 
 
 * What is Express?
 * Installing express
 * Creating an express application from scratch
   * Creating a server
   * Starting the application
-  * (Then eventually show `npm express-generator --no-view`)
+  * (Then eventually show `npx express-generator --no-view`)
 * Understanding Chaining methods
 * Handling Requests
   * GET
@@ -55,7 +55,7 @@ MERN Plan with DEC Software 2020
   * Models
   * Queries
   * CRUD
-* :x: Testing with Mocha, Chai and Istanbul
+* Testing with Mocha, Chai and NYC
 
 ## :x: React
 
