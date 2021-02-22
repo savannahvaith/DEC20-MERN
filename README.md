@@ -1,12 +1,12 @@
-# :x: React
+# React
 
-* What is React?
-* Skeleton Code
+* :heavy_check_mark: What is React?
+* :heavy_check_mark: Skeleton Code
   * `npx create-react-app`
-* Introduction
+* :heavy_check_mark: Introduction
   * JSX
   * Export and Import
-* Parent/Child Components
+* :heavy_check_mark: Parent/Child Components
 * Component Hierarchy
 * Props
 * State
