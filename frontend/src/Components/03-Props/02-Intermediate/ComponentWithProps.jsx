@@ -6,7 +6,12 @@ const ComponentWithProps = (props) => {
 
     const {numberProp, booleanProp, strProp, objProp, arrayProp, funcProp, addingMyOwn} = props; 
 
-    const values = arrayProp.map((item) => <li>{item}</li>);
+    // print an object
+    const objectPropsDisplay = []; 
+
+    for(let[k,v] of Object.entries(objProp)){
+        objectPropsDisplay.push(<li key={k}> Value: {v}</li>);
+    }
     
 
     return(
@@ -21,6 +26,7 @@ const ComponentWithProps = (props) => {
                     <ArrayItem key={i} item={item}/>
                 ))
             }
+            <p>{objectPropsDisplay}</p>
         </>
     );
 }
