@@ -19,8 +19,8 @@
 * :heavy_check_mark: State
   * Hooks (`useState()`)
   * Adding and Updating
-* Forms and Events
-* Lifting State (Inverse Data Flow)
+* :heavy_check_mark: Forms and Events
+* :heavy_check_mark: Lifting State (Inverse Data Flow)
 * Working with external Data
   * Hooks in more detail
   * `useEffect()`
