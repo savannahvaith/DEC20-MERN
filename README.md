@@ -16,7 +16,7 @@
   * Receiving and using props
   * Default Props
   * Prop Types
-* State
+* :heavy_check_mark: State
   * Hooks (`useState()`)
   * Adding and Updating
 * Forms and Events
