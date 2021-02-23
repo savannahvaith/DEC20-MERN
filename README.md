@@ -8,7 +8,7 @@
   * Export and Import
 * :heavy_check_mark: Parent/Child Components
 * :heavy_check_mark: Component Hierarchy
-* Props
+* :heavy_check_mark: Props
   * UNIDIRECTIONAL data flow - data flows from the top of a component tree to the bottom, data cannot flow back up the component tree
   * Data that does not change over the lifetime of the component should be considered as props
   * Data that can change should be considered a state, state should be the single source of truth for changing data. State should be the highest common component of those that require the data.
