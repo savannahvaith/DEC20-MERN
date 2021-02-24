@@ -21,12 +21,12 @@
   * Adding and Updating
 * :heavy_check_mark: Forms and Events
 * :heavy_check_mark: Lifting State (Inverse Data Flow)
-* Working with external Data
+* :heavy_check_mark: Working with external Data
   * Hooks in more detail
   * `useEffect()`
-* Router
+* :heavy_check_mark: Router
   * `npm install react-router-dom`
-* Data Requests
+* :heavy_check_mark: Data Requests
   * Axios
   * `useHistory()`
 * Testing
