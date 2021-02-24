@@ -1,14 +1,15 @@
 # DEC20-MERN
 
-MERN Plan with DEC Software 2020 
+MERN Plan with DEC Software 2020
 
-## :heavy_check_mark: MongoDB 
+## :heavy_check_mark: MongoDB
 
 * Install [MongoDB Compass](https://www.mongodb.com/products/compass)
 * Walk through of what Mongo is
 * Explanation of Schema, Collection and Document
 
-## :heavy_check_mark: [Node](https://github.com/savannahvaith/DEC20-MERN/tree/Node) 
+## :heavy_check_mark: [Node](https://github.com/savannahvaith/DEC20-MERN/tree/Node)
+
 * Install [Node](https://nodejs.org/en/download/)
 * What is `npm`?
 * Creating a Node Project `npm init`
@@ -16,7 +17,7 @@ MERN Plan with DEC Software 2020
 * Managing and installing dependencies
 * Running Scripts
 
-## :heavy_check_mark: [Express](https://github.com/savannahvaith/DEC20-MERN/tree/Express) 
+## :heavy_check_mark: [Express](https://github.com/savannahvaith/DEC20-MERN/tree/Express)
 
 * What is Express?
 * Installing express
@@ -84,4 +85,6 @@ MERN Plan with DEC Software 2020
 * Testing
   * JEST
 
+## Full Stack Example
 
+A fully fledged example of a Goal tracking application.
