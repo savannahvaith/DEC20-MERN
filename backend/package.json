@@ -1,0 +1,16 @@
+{
+  "name": "goal-backend",
+  "version": "1.0.0",
+  "description": "Backend for GOAL application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/savannahvaith/DEC20-MERN"
+  },
+  "author": "Savannah Vaith",
+  "license": "MIT"
+}
