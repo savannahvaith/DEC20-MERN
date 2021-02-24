@@ -14,6 +14,8 @@ import Greet from './Components/08-Hooks/Exercise/Greet';
 import LessText from './Components/08-Hooks/Exercise/LessText';
 import NotFound from './Components/09-Routing/NotFound';
 import Tesco from './Components/10-Data-Requests/Tesco';
+import Search from './Components/10-Data-Requests/OMDB/Search';
+import Details from './Components/10-Data-Requests/OMDB/Details';
 
 
 
@@ -48,6 +50,12 @@ const App = () => {
           </Route>
           <Route path="/tesco">
             <Tesco/>
+          </Route>
+          <Route path="/OMDB/Search">
+            <Search/>
+          </Route>
+          <Route path="/OMDB/details/:id">
+            <Details/>
           </Route>
           <Route>
             <NotFound />
