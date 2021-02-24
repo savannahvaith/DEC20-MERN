@@ -1,29 +1,48 @@
 'use strict';
 
-import Nav from "./Components/09-Routing/Nav";
+
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Components/09-Routing/Home';
-import About from './Components/09-Routing/About';
-import Product from './Components/09-Routing/Product';
-import User from "./Components/09-Routing/User";
+import Overview from "./Components/Overview";
+import EndContact from './Components/03-Props/ContactCard-Example/EndContact';
+import User from './Components/03-Props/Static-Data/User';
+import HomePage from './Components/05-States/Exercises/HomePage';
+import SearchableList from './Components/07-LiftingStates/SearchableList';
+import ProductManager from './Components/07-LiftingStates/Exercise/ProductManager';
+import Clock from './Components/08-Hooks/Clock';
+import Greet from './Components/08-Hooks/Exercise/Greet';
+import LessText from './Components/08-Hooks/Exercise/LessText';
+
+
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="container">
       <Router>
-        <Nav />
+        <Overview />
         <Switch>
           <Route path="/" exact>
             <Home />
           </Route>
-          <Route path="/about">
-            <About />
+          <Route path="/Prop">
+            <EndContact/>
           </Route>
-          <Route path="/shop">
-            <Product />
-          </Route>
-          <Route path="/user/:id">
+          <Route path="/User">
             <User />
+          </Route>
+          <Route path="/States">
+            <HomePage/>
+          </Route>
+          <Route path="/Lifting-States/Searchable">
+            <SearchableList/>
+          </Route>
+          <Route path="/Lifting-States/ProductManager">
+            <ProductManager/>
+          </Route>
+          <Route path="/UseEffect">
+            <Clock/>
+            <Greet name="Savannah"/>
+            <LessText text="Hello friends, how you doing today" maxLength={5}/>
           </Route>
         </Switch>
       </Router>
