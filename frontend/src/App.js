@@ -12,6 +12,8 @@ import ProductManager from './Components/07-LiftingStates/Exercise/ProductManage
 import Clock from './Components/08-Hooks/Clock';
 import Greet from './Components/08-Hooks/Exercise/Greet';
 import LessText from './Components/08-Hooks/Exercise/LessText';
+import NotFound from './Components/09-Routing/NotFound';
+import Tesco from './Components/10-Data-Requests/Tesco';
 
 
 
@@ -43,6 +45,12 @@ const App = () => {
             <Clock/>
             <Greet name="Savannah"/>
             <LessText text="Hello friends, how you doing today" maxLength={5}/>
+          </Route>
+          <Route path="/tesco">
+            <Tesco/>
+          </Route>
+          <Route>
+            <NotFound />
           </Route>
         </Switch>
       </Router>
