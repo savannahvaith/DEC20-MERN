@@ -36,9 +36,7 @@ const Tesco = () => {
                 <p>
                     Please wait.. we are loading your information!
                 </p>
-                <Spinner animation="border" role="status">
-                    <span className="sr-only">Loading...</span>
-                </Spinner>
+                <Spinner animation="border" role="status"/>
             </>
         )
     } else {
