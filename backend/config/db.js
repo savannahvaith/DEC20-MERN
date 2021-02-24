@@ -9,13 +9,11 @@ const goalSchema = new Schema({
         required: true
     },
     description: String, 
-    created:{
-        type:Date,
-        default: Date.now
-    },
     due:{
         type: Date
     }
+}, {
+    timestamps: true
 });
 
 const Goal = model('Goal', goalSchema);
