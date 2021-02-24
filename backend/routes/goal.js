@@ -28,7 +28,7 @@ router.post("/create", ({body}, res, next) => {
     const item = new Goal(body);
     item.save()
         .then((result) => {
-            res.status(201).send(`${result.name} has been added successfully!`)
+            res.status(201).send(`${result.title} has been added successfully!`)
         })
         .catch((err) => next(err));
 });
@@ -44,9 +44,9 @@ router.delete("/delete/:id", (req, res, next) => {
 });
 
 // ? PARTIAL UPDATE
-router.patch("/update/:id", ({body}, res, next) => {
+router.patch("/update/:id", (req, res, next) => {
     Goal.findByIdAndUpdate(req.params.id,
-        body,
+        req.body,
         { new: true },
         (err) => {
             if (err) {
@@ -57,8 +57,8 @@ router.patch("/update/:id", ({body}, res, next) => {
 });
 
 // ? REPLACE
-router.put("/replace/:id", ({body}, res, next) => {
-    Goal.findByIdAndUpdate(req.params.id, body, { new: true }, (err) => {
+router.put("/replace/:id", (req, res, next) => {
+    Goal.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err) => {
         if (err) {
             next(err);
         }
