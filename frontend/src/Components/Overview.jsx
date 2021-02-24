@@ -25,9 +25,6 @@ const Overview = () => {
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
-                        <NavItem>
-                            <NavLink href="https://github.com/savannahvaith/DEC20-MERN">GitHub</NavLink>
-                        </NavItem>
                         <UncontrolledDropdown nav inNavbar>
                             <DropdownToggle nav caret>
                                 Components
@@ -51,14 +48,14 @@ const Overview = () => {
                                 <DropdownItem>
                                     <NavLink href="/UseEffect">UseEffect-Hooks</NavLink>
                                 </DropdownItem>
-                                <DropdownItem divider />
                                 <DropdownItem>
-                                    Reset
+                                    <NavLink href="/OMDB/Search">OMDB</NavLink>
                                 </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
                     </Nav>
-                    <NavbarText>Simple Text</NavbarText>
+                        <NavLink href="https://github.com/savannahvaith/DEC20-MERN">GitHub</NavLink>
+                    
                 </Collapse>
             </Navbar>
         </div>
