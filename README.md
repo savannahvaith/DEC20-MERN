@@ -58,7 +58,7 @@ MERN Plan with DEC Software 2020
   * CRUD
 * Testing with Mocha, Chai and NYC
 
-## :x: React
+## :memo: React
 
 * What is React?
 * Skeleton Code
