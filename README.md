@@ -12,3 +12,12 @@ npm start
 ```
 
 The application will be deployed on `http://localhost:5019/`
+
+The front-end of the application is written in React.
+
+To run the frontend:
+
+```bash
+cd frontend
+npm start
+```
