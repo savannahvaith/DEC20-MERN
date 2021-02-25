@@ -12,11 +12,11 @@ const HomePage = () => {
 
     return (
         <div className="row">
-            <div className="col-md-2">
+            <div className="col-md-3">
                 <CreateGoal trigger={trigger} />
             </div>
             <div className="container">
-                <div className="col-md-10">
+                <div className="col-md-9">
                     <div className="alert alert-success">{msg}</div>
                     <ReadGoals msg={msg} trigger={trigger}/>
                 </div>

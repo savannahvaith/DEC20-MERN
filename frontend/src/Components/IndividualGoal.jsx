@@ -1,20 +1,25 @@
-import { Card, CardBody, CardLink, CardSubtitle, CardTitle } from "reactstrap";
+import { Toast, ToastBody, ToastHeader } from "reactstrap";
 import DeleteGoal from "./DeleteGoal";
 import EditGoal from "./EditGoal";
 
-const IndividualGoal = ({ item , trigger}) => {
+const IndividualGoal = ({ item, trigger }) => {
 
     return (
-        <Card>
-            <CardBody>
-                <CardTitle>{item.title}</CardTitle>
-                <CardSubtitle>{item.description}</CardSubtitle>
-                <div className="float-right">
-                    <DeleteGoal del={item._id} trigger={trigger}/>
-                    <EditGoal item={item} trigger={trigger}/>
-                </div>
-            </CardBody>
-        </Card>
+        // <Card>
+        <div className="p-6 my-2 rounded">
+            <Toast>
+                <ToastHeader>{item.title}
+                </ToastHeader>
+                <ToastBody style={{ height: "auto" }}>
+                    {item.description}
+                    <hr />
+                    <DeleteGoal className="float-right" del={item._id} trigger={trigger} />
+                    <EditGoal className="float-right" item={item} trigger={trigger} />
+
+                </ToastBody>
+            </Toast>
+        </div>
+
     )
 }
 export default IndividualGoal; 
