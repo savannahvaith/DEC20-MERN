@@ -58,8 +58,8 @@ const EditGoal = ({ item, trigger }) => {
                         />
                     </ModalBody>
                     <ModalFooter>
-                        <button onClick={toggle} className="btn btn-outline-danger">Cancel</button>
-                        <button onClick={updateDatabase}type="submit" className="btn btn-outline-success">Update</button>
+                        <button onClick={() => toggle} className="btn btn-outline-danger">Cancel</button>
+                        <button onSubmit={updateDatabase}type="submit" className="btn btn-outline-success">Update</button>
                     </ModalFooter>
                 </form>
             </Modal>
