@@ -2,6 +2,8 @@
 
 MERN Plan with DEC Software 2020
 
+Switch through the different branches, or click on the headings below to get a deeper understanding of each element within the MERN stack. 
+
 ## :heavy_check_mark: MongoDB
 
 * Install [MongoDB Compass](https://www.mongodb.com/products/compass)
@@ -85,6 +87,6 @@ MERN Plan with DEC Software 2020
 * Testing
   * JEST
 
-## [Full Stack Example](https://github.com/savannahvaith/DEC20-MERN/tree/Full-Stack)
+## :heavy_check_mark: [Full Stack Example](https://github.com/savannahvaith/DEC20-MERN/tree/Full-Stack)
 
 A fully fledged example of a Goal tracking application.
