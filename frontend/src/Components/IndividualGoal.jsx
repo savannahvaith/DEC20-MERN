@@ -1,4 +1,4 @@
-import { Card, CardBody, CardSubtitle, CardTitle, Toast, ToastBody, ToastHeader } from "reactstrap";
+import { Toast, ToastBody, ToastHeader } from "reactstrap";
 import DeleteGoal from "./DeleteGoal";
 import EditGoal from "./EditGoal";
 
