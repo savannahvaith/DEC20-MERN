@@ -21,3 +21,5 @@ To run the frontend:
 cd frontend
 npm start
 ```
+
+The application will be deployed on `https://localhost:3000`
