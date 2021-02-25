@@ -88,3 +88,4 @@ MERN Plan with DEC Software 2020
 ## Full Stack Example
 
 A fully fledged example of a Goal tracking application.
+Ensure backend is running, before making requests from the Frontend!
