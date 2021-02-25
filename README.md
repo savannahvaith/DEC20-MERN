@@ -58,7 +58,7 @@ MERN Plan with DEC Software 2020
   * CRUD
 * Testing with Mocha, Chai and NYC
 
-## :memo: React
+## :memo: [React](https://github.com/savannahvaith/DEC20-MERN/tree/React)
 
 * What is React?
 * Skeleton Code
@@ -85,7 +85,6 @@ MERN Plan with DEC Software 2020
 * Testing
   * JEST
 
-## Full Stack Example
+## [Full Stack Example](https://github.com/savannahvaith/DEC20-MERN/tree/Full-Stack)
 
 A fully fledged example of a Goal tracking application.
-Ensure backend is running, before making requests from the Frontend!
