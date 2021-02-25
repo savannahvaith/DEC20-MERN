@@ -1,5 +1,6 @@
 import CreateGoal from "../SideBar/CreateGoal"
 import { useState } from 'react';
+import ReadGoals from "../ReadGoals";
 
 const HomePage = () => {
 
@@ -17,6 +18,7 @@ const HomePage = () => {
             <div className="container">
                 <div className="col-md-10">
                     <div className="alert alert-success">{msg}</div>
+                    <ReadGoals msg={msg} trigger={trigger}/>
                 </div>
             </div>
         </div>
