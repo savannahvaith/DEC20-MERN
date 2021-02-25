@@ -4,7 +4,7 @@ This project will look at creating at tracking Goals for users to keep track of 
 
 The backend will be written first in Express; and will incorporate MongoDB.
 
-To run the backend this will run on nodemon:
+To run the backend:
 
 ```bash
 cd backend
@@ -22,4 +22,4 @@ cd frontend
 npm start
 ```
 
-The application will be deployed on `https://localhost:3000`
+The application will be deployed on `http://localhost:3000`
