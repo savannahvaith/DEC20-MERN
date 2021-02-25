@@ -31,7 +31,7 @@ const ReadGoals = ({ msg , trigger}) => {
         return (
             <div className="row">
                 {goalList.map((item) => (
-                    <div className="col-md-12">
+                    <div className="col-md-6">
                         <IndividualGoal key={item._id} item={item} trigger={trigger} />
                     </div>
                 ))}
