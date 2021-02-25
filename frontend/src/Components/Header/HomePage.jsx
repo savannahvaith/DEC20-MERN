@@ -1,10 +1,10 @@
 import CreateGoal from "../SideBar/CreateGoal"
-import {useState} from 'react'; 
+import { useState } from 'react';
 
 const HomePage = () => {
 
     const [msg, setMsg] = useState('');
-    
+
     const trigger = (data) => {
         setMsg(data);
     }
@@ -12,10 +12,12 @@ const HomePage = () => {
     return (
         <div className="row">
             <div className="col-md-2">
-                <CreateGoal trigger={trigger}/>
+                <CreateGoal trigger={trigger} />
             </div>
-            <div className="col-md-10">
-                <div className="alert alert-success">{msg}</div>
+            <div className="container">
+                <div className="col-md-10">
+                    <div className="alert alert-success">{msg}</div>
+                </div>
             </div>
         </div>
     )
