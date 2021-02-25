@@ -4,7 +4,7 @@ This project will look at creating at tracking Goals for users to keep track of 
 
 The backend will be written first in Express; and will incorporate MongoDB.
 
-To run the backend:
+To run the backend this will run on nodemon:
 
 ```bash
 cd backend
