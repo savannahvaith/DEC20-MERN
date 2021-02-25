@@ -55,7 +55,8 @@ const CreateGoal = ({trigger}) => {
                             value={date}
                             onChange={({ target }) => setDate(target.value)}
                         />
-                        <button type="submit" className="btn btn-outline-success">Add</button>
+                        <br/>
+                        <button type="submit" className="btn btn-outline-success col-md-12">Add</button>
                     </form>
                 </CardBody>
             </Card>
