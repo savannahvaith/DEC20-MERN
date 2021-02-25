@@ -2,3 +2,8 @@ body {
   background-color: darkcyan!important;
   overflow-x: hidden;
 }
+
+#sidebar{
+  min-height: 100vh; 
+  margin-left: 0px;
+}
