@@ -22,7 +22,7 @@ const ControlledInput = () => {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
             />
-            <button type="submit">Submit</button>
+            <button type="submit" onClick={handleSubmit}>Submit</button>
         </form>
     )
 }
