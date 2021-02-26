@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It should match the snapshot every time it's rendered 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <nav
+      className="navbar navbar-expand-md navbar-light bg-light"
+    >
+      <a
+        className="navbar-brand"
+        href="/"
+      >
+        DecSoftware2020
+      </a>
+      <button
+        aria-label="Toggle navigation"
+        className="navbar-toggler"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="navbar-toggler-icon"
+        />
+      </button>
+      <div
+        className="collapse navbar-collapse"
+        style={Object {}}
+      >
+        <ul
+          className="mr-auto navbar-nav"
+        >
+          <li
+            className="dropdown nav-item"
+            onKeyDown={[Function]}
+          >
+            <a
+              aria-expanded={false}
+              aria-haspopup={true}
+              className="dropdown-toggle nav-link"
+              href="#"
+              onClick={[Function]}
+            >
+              Components
+            </a>
+            <div
+              aria-hidden={true}
+              className="dropdown-menu dropdown-menu-right"
+              role="menu"
+              tabIndex="-1"
+            >
+              <button
+                className="dropdown-item"
+                onClick={[Function]}
+                role="menuitem"
+                tabIndex="0"
+                type="button"
+              >
+                <a
+                  className="nav-link"
+                  href="/Prop"
+                  onClick={[Function]}
+                >
+                  Props
+                </a>
+              </button>
+              <button
+                className="dropdown-item"
+                onClick={[Function]}
+                role="menuitem"
+                tabIndex="0"
+                type="button"
+              >
+                <a
+                  className="nav-link"
+                  href="/User"
+                  onClick={[Function]}
+                >
+                  Static Data
+                </a>
+              </button>
+              <button
+                className="dropdown-item"
+                onClick={[Function]}
+                role="menuitem"
+                tabIndex="0"
+                type="button"
+              >
+                <a
+                  className="nav-link"
+                  href="/States"
+                  onClick={[Function]}
+                >
+                  States
+                </a>
+              </button>
+              <button
+                className="dropdown-item"
+                onClick={[Function]}
+                role="menuitem"
+                tabIndex="0"
+                type="button"
+              >
+                <a
+                  className="nav-link"
+                  href="Lifting-States/Searchable"
+                  onClick={[Function]}
+                >
+                  Lifting States (Searchable List)
+                </a>
+              </button>
+              <button
+                className="dropdown-item"
+                onClick={[Function]}
+                role="menuitem"
+                tabIndex="0"
+                type="button"
+              >
+                <a
+                  className="nav-link"
+                  href="/Lifting-States/ProductManager"
+                  onClick={[Function]}
+                >
+                  Lifting States (Product Manager)
+                </a>
+              </button>
+              <button
+                className="dropdown-item"
+                onClick={[Function]}
+                role="menuitem"
+                tabIndex="0"
+                type="button"
+              >
+                <a
+                  className="nav-link"
+                  href="/UseEffect"
+                  onClick={[Function]}
+                >
+                  UseEffect-Hooks
+                </a>
+              </button>
+              <button
+                className="dropdown-item"
+                onClick={[Function]}
+                role="menuitem"
+                tabIndex="0"
+                type="button"
+              >
+                <a
+                  className="nav-link"
+                  href="/OMDB/Search"
+                  onClick={[Function]}
+                >
+                  OMDB
+                </a>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <a
+          className="nav-link"
+          href="https://github.com/savannahvaith/DEC20-MERN"
+          onClick={[Function]}
+        >
+          GitHub
+        </a>
+      </div>
+    </nav>
+  </div>
+  <h1>
+     Welcome to the website! I added this!!!!
+  </h1>
+</div>
+`;
