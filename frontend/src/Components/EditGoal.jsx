@@ -33,7 +33,7 @@ const EditGoal = ({ item, trigger }) => {
             <CardLink className="btn btn-outline-warning" onClick={toggle}>EDIT </CardLink>
             <Modal isOpen={showModal}>
                 <ModalHeader>{item.title}</ModalHeader>
-                <form>
+                <form onSubmit={updateDatabase}>
                     <ModalBody>
                         <input
                             type="text"
