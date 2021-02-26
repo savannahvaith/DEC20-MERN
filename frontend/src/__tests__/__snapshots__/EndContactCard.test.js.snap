@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`End Contact Card Testing with Props Should match the snapshot!! 1`] = `
+Array [
+  <img
+    src="https://placedog.net/300/200?id=43"
+  />,
+  <h3>
+    Harry Pawter
+  </h3>,
+  <p>
+    Phone: 
+    01234567890
+  </p>,
+  <p>
+    Email: 
+    harry@therealone.com
+  </p>,
+]
+`;
