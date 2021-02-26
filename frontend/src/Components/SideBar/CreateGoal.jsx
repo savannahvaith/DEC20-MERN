@@ -8,11 +8,11 @@ const CreateGoal = ({trigger}) => {
     // states for form
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
-    const [date, setDate] = useState('');
+    const [due, setDate] = useState('');
 
     const create = (e) => {
         e.preventDefault(); 
-        axios.post(`${GOAL_URL}/create`, {title,description,date})
+        axios.post(`${GOAL_URL}/create`, {title,description,due})
             .then((res) => {
                 // console.log(res.data);
                 clearValues();
@@ -52,7 +52,7 @@ const CreateGoal = ({trigger}) => {
                             type="date"
                             className="form-control"
                             placeholder="Due Date"
-                            value={date}
+                            value={due}
                             onChange={({ target }) => setDate(target.value)}
                         />
                         <br/>
