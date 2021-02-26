@@ -16,6 +16,10 @@ function App() {
       <Route path="/about">
           <About/>
       </Route>
+      <Route>
+        {/* Call a component for a 404 NOT FOUND */}
+        <p>Sorry can't find what you're looking for!</p>
+      </Route>
       </Switch>
     </Router>
   );
