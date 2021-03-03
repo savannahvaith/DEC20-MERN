@@ -4,6 +4,10 @@ MERN Plan with DEC Software 2020
 
 Switch through the different branches, or click on the headings below to get a deeper understanding of each element within the MERN stack. 
 
+## :heavy_check_mark: [Full Stack Example](https://github.com/savannahvaith/DEC20-MERN/tree/Full-Stack)
+
+A fully fledged example of a Goal tracking application.
+
 ## :heavy_check_mark: MongoDB
 
 * Install [MongoDB Compass](https://www.mongodb.com/products/compass)
@@ -60,7 +64,7 @@ Switch through the different branches, or click on the headings below to get a d
   * CRUD
 * Testing with Mocha, Chai and NYC
 
-## :memo: [React](https://github.com/savannahvaith/DEC20-MERN/tree/React)
+## :heavy_check_mark: [React](https://github.com/savannahvaith/DEC20-MERN/tree/React)
 
 * What is React?
 * Skeleton Code
@@ -86,7 +90,3 @@ Switch through the different branches, or click on the headings below to get a d
   * `useHistory()`
 * Testing
   * JEST
-
-## :heavy_check_mark: [Full Stack Example](https://github.com/savannahvaith/DEC20-MERN/tree/Full-Stack)
-
-A fully fledged example of a Goal tracking application.
