@@ -29,7 +29,7 @@
 * :heavy_check_mark: Data Requests
   * Axios
   * `useHistory()`
-* :heavy_check:mark: Testing
+* :heavy_check_mark: Testing
   * JEST
   * Snapshot Testing
   * Testing Components with Props
